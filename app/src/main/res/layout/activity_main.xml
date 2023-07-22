@@ -9,10 +9,54 @@
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSwitch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewTextoTexto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Switch
+                android:id="@+id/switchHello"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Switch"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.459"
+                app:layout_constraintStart_toEndOf="@+id/textViewSwitch"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardViewTextoNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#023059"
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Valor Almacenado"
+                android:text="Entero"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -95,7 +139,7 @@
                 android:layout_height="60dp"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Ingresa un número entero"
+                android:hint="Ingresa un número Entero"
                 android:inputType="number"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -129,6 +173,7 @@
                 android:layout_width="250dp"
                 android:layout_height="60dp"
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Ingresa un Texto"
                 android:inputType="text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -143,7 +188,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
         android:backgroundTint="#023059"
         app:cardCornerRadius="15dp"
@@ -161,7 +206,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Texto Almacenado"
+                android:text="Texto"
                 android:textColor="#FAFAFA"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -172,42 +217,18 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textViewSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="24dp"
-        android:text="Hello first fragment"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewTextoTexto" />
-
-    <Switch
-        android:id="@+id/switchHello"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="Switch"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewSwitch"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewSwitch"
-        app:layout_constraintTop_toTopOf="@+id/textViewSwitch" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewDecimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
         android:backgroundTint="#84B1D9"
         app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSwitch">
+        app:layout_constraintTop_toBottomOf="@+id/cardViewSwitch">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayoutEditDecimal"
@@ -219,6 +240,7 @@
                 android:layout_width="250dp"
                 android:layout_height="60dp"
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Ingresa un número Decimal"
                 android:inputType="numberDecimal"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -234,7 +256,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
         android:backgroundTint="#023059"
         app:cardCornerRadius="15dp"
@@ -252,7 +274,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Valor decimal Almacenado"
+                android:text="Decimal"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -284,6 +306,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#C6752F"
         android:text="Guardar"
         app:cornerRadius="10dp"

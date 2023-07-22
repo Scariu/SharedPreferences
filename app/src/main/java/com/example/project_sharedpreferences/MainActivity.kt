@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun borrarDatos() {
-        binding.textViewNumero.text = ""
-        binding.textViewTextoTexto.text = ""
-        binding.textViewDecimal.text = ""
+        binding.textViewNumero.text = "Entero"
+        binding.textViewTextoTexto.text = "Texto"
+        binding.textViewDecimal.text = "Decimal"
         binding.textViewSwitch.text = ""
 
         binding.editTextTexto.text.clear()
