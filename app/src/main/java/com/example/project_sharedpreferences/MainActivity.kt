@@ -26,6 +26,23 @@ class MainActivity : AppCompatActivity() {
 
             guardarDatos(texto, entero, decimal, switchBoleano)
         }
+
+        binding.buttonMostrar.setOnClickListener{
+            mostrarDatos()
+        }
+    }
+
+    private fun mostrarDatos() {
+        val entero = mSharedPreferences.getInt("miEntero",0)
+        val texto = mSharedPreferences.getString("miTexto", "")
+        val decimal = mSharedPreferences.getFloat("miDecimal", 0.0F)
+        val switchBoleano = mSharedPreferences.getBoolean("miSitchBooleano", false)
+
+        binding.textViewNumero.text = entero.toString()
+        binding.textViewTextoTexto.text = texto
+        binding.textViewDecimal.text = decimal.toString()
+        binding.textViewHello.text = switchBoleano.toString()
+        binding.switchHello.isChecked = switchBoleano
     }
 
     //Guarda datos en sharedPreferences
