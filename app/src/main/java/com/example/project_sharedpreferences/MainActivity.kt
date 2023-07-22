@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
 import com.example.project_sharedpreferences.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -30,6 +31,21 @@ class MainActivity : AppCompatActivity() {
         binding.buttonMostrar.setOnClickListener{
             mostrarDatos()
         }
+        binding.buttonBorrar.setOnClickListener{
+            borrarDatos()
+        }
+    }
+
+    private fun borrarDatos() {
+        binding.textViewNumero.text = ""
+        binding.textViewTextoTexto.text = ""
+        binding.textViewDecimal.text = ""
+        binding.textViewSwitch.text = ""
+
+        binding.editTextTexto.text.clear()
+        binding.editTextNumber.text.clear()
+        binding.editTextNumberDecimal.text.clear()
+        binding.switchHello.isChecked = false
     }
 
     private fun mostrarDatos() {
@@ -41,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         binding.textViewNumero.text = entero.toString()
         binding.textViewTextoTexto.text = texto
         binding.textViewDecimal.text = decimal.toString()
-        binding.textViewHello.text = switchBoleano.toString()
+        binding.textViewSwitch.text = switchBoleano.toString()
         binding.switchHello.isChecked = switchBoleano
     }
 

@@ -173,7 +173,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/textViewHello"
+        android:id="@+id/textViewSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
@@ -191,10 +191,10 @@
         android:text="Switch"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewHello"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSwitch"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewHello"
-        app:layout_constraintTop_toTopOf="@+id/textViewHello" />
+        app:layout_constraintStart_toEndOf="@+id/textViewSwitch"
+        app:layout_constraintTop_toTopOf="@+id/textViewSwitch" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewDecimal"
@@ -207,7 +207,7 @@
         app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHello">
+        app:layout_constraintTop_toBottomOf="@+id/textViewSwitch">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayoutEditDecimal"
