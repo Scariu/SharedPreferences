@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EFD892"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -81,8 +83,8 @@
 
             <EditText
                 android:id="@+id/editTextNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Ingresa un número entero"
@@ -114,8 +116,8 @@
 
             <EditText
                 android:id="@+id/editTextTexto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
                 android:ems="10"
                 android:hint="Ingresa un Texto"
                 android:inputType="text"
@@ -167,8 +169,8 @@
 
     <Switch
         android:id="@+id/switchHello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:text="Switch"
         app:layout_constraintBottom_toBottomOf="@+id/textViewHello"
         app:layout_constraintEnd_toEndOf="parent"
@@ -193,8 +195,8 @@
 
             <EditText
                 android:id="@+id/editTextNumberDecimal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
                 android:ems="10"
                 android:hint="Ingresa un número Decimal"
                 android:inputType="numberDecimal"
@@ -239,13 +241,15 @@
         android:id="@+id/buttonBorrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="Borrar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewTextoDecimal"
+        app:layout_constraintTop_toTopOf="@+id/buttonGuardar"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -253,13 +257,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:text="Guardar"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonBorrar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMostrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewTextoDecimal"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <Button
+        android:id="@+id/buttonMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Mostrar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
-        app:layout_constraintStart_toEndOf="@+id/buttonBorrar"
-        app:layout_constraintTop_toTopOf="@+id/buttonBorrar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
