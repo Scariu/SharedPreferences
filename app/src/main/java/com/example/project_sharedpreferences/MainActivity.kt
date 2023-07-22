@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         val entero = mSharedPreferences.getInt("miEntero",0)
         val texto = mSharedPreferences.getString("miTexto", "")
         val decimal = mSharedPreferences.getFloat("miDecimal", 0.0F)
-        val switchBoleano = mSharedPreferences.getBoolean("miSitchBooleano", false)
+        val switchBoleano = mSharedPreferences.getBoolean("miSwitch", false)
 
         binding.textViewNumero.text = entero.toString()
         binding.textViewTextoTexto.text = texto
