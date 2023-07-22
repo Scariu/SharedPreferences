@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFD892"
+    android:background="#011826"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -13,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#023059"
+        app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewIngresaNum">
@@ -26,7 +28,10 @@
                 android:id="@+id/textViewNumero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:text="Valor Almacenado"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -37,11 +42,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
+        android:backgroundTint="#C6752F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -56,7 +61,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Titulo"
+                android:text="Shared Preferences"
+                android:textColor="#090909"
                 android:textSize="34sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -73,6 +79,8 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
+        android:backgroundTint="#84B1D9"
+        app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewTitulo">
@@ -105,6 +113,8 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
+        android:backgroundTint="#84B1D9"
+        app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewTextoNum">
@@ -135,6 +145,8 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
+        android:backgroundTint="#023059"
+        app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewIngresaTexto">
@@ -148,7 +160,10 @@
                 android:id="@+id/textViewTextoTexto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:text="Texto Almacenado"
+                android:textColor="#FAFAFA"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -162,8 +177,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:text="Hello first fragment"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewTextoTexto" />
 
@@ -172,6 +189,8 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Switch"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewHello"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewHello"
@@ -182,8 +201,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="1dp"
+        android:backgroundTint="#84B1D9"
+        app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewHello">
@@ -215,6 +236,8 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
+        android:backgroundTint="#023059"
+        app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewDecimal">
@@ -228,7 +251,10 @@
                 android:id="@+id/textViewDecimal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:text="Valor decimal Almacenado"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -239,42 +265,44 @@
 
     <Button
         android:id="@+id/buttonBorrar"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="4dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="#C6752F"
         android:text="Borrar"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/buttonGuardar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.969"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMostrar"
+        app:layout_constraintStart_toEndOf="@+id/buttonGuardar"
         app:layout_constraintTop_toTopOf="@+id/buttonGuardar"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonGuardar"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:backgroundTint="#C6752F"
         android:text="Guardar"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMostrar"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewTextoDecimal"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <Button
         android:id="@+id/buttonMostrar"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:backgroundTint="#C6752F"
         android:text="Mostrar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonBorrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/buttonBorrar"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
